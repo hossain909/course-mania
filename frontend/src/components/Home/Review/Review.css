@@ -1,0 +1,8 @@
+#review-section {
+    background-image: url("../Team/img/portfolio-bg.jpg");
+    color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+}

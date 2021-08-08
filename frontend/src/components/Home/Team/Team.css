@@ -1,0 +1,40 @@
+.team-section {
+    background-image: url("./img/team-bg.jpg");
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    text-align: center;
+}
+.facebook {
+    color: #16a5fb;
+}
+.twitter{
+    color: #1ea1f1;
+}
+.instagram{
+    color: #a63992;
+}
+.youtube{
+    color: red;
+}
+h2{
+    text-transform: uppercase;
+}
+h4{
+  text-transform: uppercase;
+}
+.team-member {
+    margin: 3rem 2rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.role {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: purple;
+    display: inline-block;
+    margin-top: .5rem;
+}

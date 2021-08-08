@@ -1,0 +1,12 @@
+.client-photo {
+    width: 6rem;
+}
+.client-photo img {
+    border-radius: 50%;
+}
+.client-review{
+    border-radius: 8px;
+    font-size: 14px;
+    font-style: italic;
+    color: #d8dde0;
+}
