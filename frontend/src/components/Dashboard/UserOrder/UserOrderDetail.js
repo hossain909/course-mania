@@ -7,7 +7,6 @@ const BookingDetail = ({ order }) => {
   return (
     <div className="card my-3 bg-dark text-light" style={{ width: "18rem" }}>
       <div className="card-body">
-
         {order.status === "On Going" && <button className="btn btn-warning btn-sm mb-3">{order.status}</button>
         }
         {order.status === "Pending" && <button className="btn btn-danger btn-sm mb-3">{order.status}</button>

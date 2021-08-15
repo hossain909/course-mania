@@ -10,7 +10,7 @@ const CourseDetails = ({ course }) => {
   const { title, description, imageURL, price, instructor } = course;
 
   const loadSingleCourse = (id) => {
-    fetch(`https://mighty-badlands-04385.herokuapp.com/courses/${id}`)
+    fetch(`https://mighty-badlands-04385.herokuapp.com/course/${id}`)
       .then(res => res.json())
       .then(data => {
         setCourseDetails(data)
@@ -33,7 +33,7 @@ const CourseDetails = ({ course }) => {
           <small>{description}</small>
           <div className="mt-4 d-flex justify-content-between">
             <h5 className="mt-2">&#2547; {price}</h5>
-            <Link to="/myOrder" ><button onClick={() => loadSingleCourse(course._id)} className="btn btn-info">Enroll Now</button></Link>
+            <Link to="/add-order" ><button onClick={() => loadSingleCourse(course._id)} className="btn btn-info">Enroll Now</button></Link>
           </div>
         </div>
       </div>

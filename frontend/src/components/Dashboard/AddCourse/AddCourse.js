@@ -16,7 +16,7 @@ const AddCourse = () => {
       price: data.price,
       imageURL: imageURL
     }
-    const url = `https://mighty-badlands-04385.herokuapp.com/addCourse`
+    const url = 'http://localhost:5000/addCourse'
     fetch(url, {
       method: "POST",
       headers: {
@@ -25,6 +25,7 @@ const AddCourse = () => {
       body: JSON.stringify(courseInfo)
     })
       .then(res => {
+        alert("Course uploaded successfully!")
         console.log("server side response", res);
       })
     console.log(data);

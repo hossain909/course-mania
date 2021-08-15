@@ -7,7 +7,7 @@ import logo from "../../../images/code2.png";
 
 const MainNav = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-  const { email, photo } = loggedInUser;
+  const { email, photo, name } = loggedInUser;
   return (
     <Navbar expand="lg">
       <Container>
@@ -24,7 +24,7 @@ const MainNav = () => {
           {
             loggedInUser.email
               ?
-              <Button className="btn-dark font-weight-bold rounded-pill" size="sm" as={Link} to="/dashboard"><img style={{ height: "2rem" }} className="img-fluid mr-1" src={photo} alt="" />{email}</Button>
+              <Button className="btn-dark font-weight-bold rounded-pill" size="sm" as={Link} to="/login"><img style={{ height: "2rem" }} className="img-fluid mr-1 rounded-pill" src={photo} alt="" />{name}</Button>
               : ""
           }
         </Navbar.Collapse>

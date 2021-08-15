@@ -8,7 +8,7 @@ const Review = () => {
     fetch("https://mighty-badlands-04385.herokuapp.com/reviews")
       .then(res => res.json())
       .then(data => setAllReviews(data))
-  }, [])
+  }, [allReviews])
   return (
     <section id="review-section" className="py-5">
       <div className="container py-5">

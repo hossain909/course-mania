@@ -2,13 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddCourse from './components/Dashboard/AddCourse/AddCourse';
+import AddOrder from './components/Dashboard/AddOrder/AddOrder';
 import AddReview from './components/Dashboard/AddReview/AddReview';
-import BookingList from './components/Dashboard/BookingList/BookingList';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin';
 import ManageCourse from './components/Dashboard/ManageCourse/ManageCourse';
-import MyOrder from './components/Dashboard/MyOrder/MyOrder';
 import OrderList from './components/Dashboard/OrderList/OrderList';
+import UserOrder from './components/Dashboard/UserOrder/UserOrder';
 import Courses from './components/Home/Courses/Courses';
 import Home from './components/Home/Home/Home';
 import Team from './components/Home/Team/Team';
@@ -44,16 +44,16 @@ function App() {
                 <Team></Team>
               </Route>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              <PrivateRoute path="/myOrder">
-                <MyOrder></MyOrder>
+              <PrivateRoute path="/add-order">
+                <AddOrder></AddOrder>
               </PrivateRoute>
-              <PrivateRoute path="/bookingList">
-                <BookingList></BookingList>
+              <PrivateRoute path="/user-order">
+                <UserOrder></UserOrder>
               </PrivateRoute>
-              <PrivateRoute path="/addReview">
+              <PrivateRoute path="/add-review">
                 <AddReview></AddReview>
               </PrivateRoute>
-              <PrivateRoute path="/addCourse">
+              <PrivateRoute path="/course/addCourse">
                 <AddCourse></AddCourse>
               </PrivateRoute>
               <PrivateRoute path="/makeAdmin">
